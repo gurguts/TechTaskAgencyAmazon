@@ -1,0 +1,384 @@
+2024-03-02T00:41:16.558+02:00  INFO 7992 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Starting TechTaskAgencyAmazonApplication using Java 19.0.2 with PID 7992 (D:\java\projects\TechTaskAgencyAmazon\target\classes started by nikit in D:\java\projects\TechTaskAgencyAmazon)
+2024-03-02T00:41:16.690+02:00 DEBUG 7992 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-02T00:41:16.693+02:00  INFO 7992 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-03-02T00:41:17.812+02:00  INFO 7992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-02T00:41:17.813+02:00  INFO 7992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-02T00:41:35.469+02:00  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-02T00:41:35.813+02:00  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 330 ms. Found 2 MongoDB repository interfaces.
+2024-03-02T00:41:42.381+02:00  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-02T00:41:42.933+02:00  INFO 7992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 25118 ms
+2024-03-02T00:41:49.185+02:00  INFO 7992 --- [restartedMain] c.e.t.security.JwtTokenProvider          : Initializing JwtTokenProvider
+2024-03-02T00:41:49.262+02:00  INFO 7992 --- [restartedMain] c.e.t.security.JwtTokenProvider          : JwtTokenProvider initialized successfully
+2024-03-02T00:41:49.740+02:00 DEBUG 7992 --- [restartedMain] c.e.t.security.JwtTokenFilter            : Filter 'jwtTokenFilter' configured for use
+2024-03-02T00:41:50.069+02:00  INFO 7992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-02T00:41:53.086+02:00  INFO 7992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28c9353a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ff860ab, org.springframework.security.web.context.SecurityContextHolderFilter@3548d6e4, org.springframework.security.web.header.HeaderWriterFilter@147581c3, org.springframework.web.filter.CorsFilter@5b054f6c, org.springframework.security.web.authentication.logout.LogoutFilter@363f3117, com.example.techtaskagencyamazon.security.JwtTokenFilter@1aed7ad0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8561011, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@692ff403, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fff33de, org.springframework.security.web.session.SessionManagementFilter@3c71bf1b, org.springframework.security.web.access.ExceptionTranslationFilter@302cd144, org.springframework.security.web.access.intercept.AuthorizationFilter@4fd56999]
+2024-03-02T00:41:53.955+02:00  WARN 7992 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-03-02T00:41:54.891+02:00  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-02T00:41:54.969+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:41:54.970+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:41:54.971+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:41:54.971+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:41:54.986+02:00  INFO 7992 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Started TechTaskAgencyAmazonApplication in 47.383 seconds (process running for 71.724)
+2024-03-02T00:41:54.999+02:00  INFO 7992 --- [restartedMain] c.e.t.services.ReportUpdateService       : Deleting all reports from the database...
+2024-03-02T00:41:55.660+02:00  INFO 7992 --- [restartedMain] c.e.t.services.ReportUpdateService       : Reading test_report.json...
+2024-03-02T00:41:55.660+02:00  INFO 7992 --- [restartedMain] c.e.t.services.ReportUpdateService       : Deserializing JSON to Report object...
+2024-03-02T00:41:55.911+02:00  INFO 7992 --- [restartedMain] c.e.t.services.ReportUpdateService       : Saving report to the database...
+2024-03-02T00:41:56.324+02:00  INFO 7992 --- [restartedMain] c.e.t.configurations.DbInitializer       : Database initialization completed.
+2024-03-02T00:42:54.930+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:42:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:42:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:42:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:43:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:43:54.932+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:43:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:43:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:44:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:44:54.934+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:44:54.934+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:44:54.935+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:45:54.928+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:45:54.929+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:45:54.929+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:45:54.930+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:46:44.282+02:00  INFO 7992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-02T00:46:44.290+02:00  INFO 7992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-02T00:46:44.428+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:46:44.496+02:00  WARN 7992 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:46:44.506+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:46:44.507+02:00  WARN 7992 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:46:44.672+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.r.RegistrationRestController       : Received registration request for user: nikita
+2024-03-02T00:46:44.675+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.services.UserValidator             : Validating registration data for user: nikita
+2024-03-02T00:46:44.676+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.services.UserValidator             : All validations were successful for the user: nikita
+2024-03-02T00:46:44.676+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.services.UserService               : Registering user: nikita
+2024-03-02T00:46:46.062+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.services.UserService               : User registered successfully: nikita
+2024-03-02T00:46:46.062+02:00  INFO 7992 --- [http-nio-8080-exec-2] c.e.t.r.RegistrationRestController       : User registered successfully.
+2024-03-02T00:46:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:46:54.932+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:46:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:46:54.934+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:47:40.802+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:47:40.802+02:00  WARN 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:47:40.803+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:47:40.804+02:00  WARN 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:47:40.821+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.r.AuthenticationRestController     : Received login request for user: nikita
+2024-03-02T00:47:43.356+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.services.UserService               : Finding user by login: nikita
+2024-03-02T00:47:43.412+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Creating token for user: nikita
+2024-03-02T00:47:43.547+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Token created successfully for user: nikita
+2024-03-02T00:47:43.548+02:00  INFO 7992 --- [http-nio-8080-exec-3] c.e.t.r.AuthenticationRestController     : User nikita authenticated successfully
+2024-03-02T00:47:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:47:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:47:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:47:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:48:25.853+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:48:25.854+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:48:25.854+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:48:25.971+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:48:25.972+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:48:25.977+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:48:26.021+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:48:26.022+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:48:26.022+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:48:26.026+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:48:26.027+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:48:26.031+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:48:26.092+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.restControllers.ReportController   : Fetching reports by date: 2024-02-18
+2024-03-02T00:48:26.576+02:00  INFO 7992 --- [http-nio-8080-exec-4] c.e.t.services.ReportService             : Fetching reports by date: 2024-02-18
+2024-03-02T00:48:43.143+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:48:43.144+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:48:43.144+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:48:43.149+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:48:43.150+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:48:43.156+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:48:43.198+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:48:43.198+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:48:43.198+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:48:43.205+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:48:43.205+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:48:43.210+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:48:43.263+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.restControllers.ReportController   : Fetching reports between dates: 2024-02-18 and 2024-02-20
+2024-03-02T00:48:43.364+02:00  INFO 7992 --- [http-nio-8080-exec-5] c.e.t.services.ReportService             : Fetching reports between dates: 2024-02-18 and 2024-02-20
+2024-03-02T00:48:54.931+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:48:54.932+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:48:54.933+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:48:54.934+02:00  INFO 7992 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:52:08.241+02:00  INFO 15564 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Starting TechTaskAgencyAmazonApplication using Java 19.0.2 with PID 15564 (D:\java\projects\TechTaskAgencyAmazon\target\classes started by nikit in D:\java\projects\TechTaskAgencyAmazon)
+2024-03-02T00:52:08.244+02:00 DEBUG 15564 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-02T00:52:08.246+02:00  INFO 15564 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-03-02T00:52:08.422+02:00  INFO 15564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-02T00:52:08.423+02:00  INFO 15564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-02T00:52:12.190+02:00  INFO 15564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-02T00:52:12.379+02:00  INFO 15564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 2 MongoDB repository interfaces.
+2024-03-02T00:52:15.399+02:00  INFO 15564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-02T00:52:15.733+02:00  INFO 15564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7308 ms
+2024-03-02T00:52:20.285+02:00  INFO 15564 --- [restartedMain] c.e.t.security.JwtTokenProvider          : Initializing JwtTokenProvider
+2024-03-02T00:52:20.384+02:00  INFO 15564 --- [restartedMain] c.e.t.security.JwtTokenProvider          : JwtTokenProvider initialized successfully
+2024-03-02T00:52:20.713+02:00 DEBUG 15564 --- [restartedMain] c.e.t.security.JwtTokenFilter            : Filter 'jwtTokenFilter' configured for use
+2024-03-02T00:52:21.141+02:00  INFO 15564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-02T00:52:23.302+02:00  INFO 15564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17db59b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56ce751c, org.springframework.security.web.context.SecurityContextHolderFilter@9c68a08, org.springframework.security.web.header.HeaderWriterFilter@afe7709, org.springframework.web.filter.CorsFilter@70a3eae9, org.springframework.security.web.authentication.logout.LogoutFilter@1763e061, com.example.techtaskagencyamazon.security.JwtTokenFilter@58fc9b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77b7ee0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a304d6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184140f5, org.springframework.security.web.session.SessionManagementFilter@1083f31e, org.springframework.security.web.access.ExceptionTranslationFilter@78def981, org.springframework.security.web.access.intercept.AuthorizationFilter@60b8ce72]
+2024-03-02T00:52:23.839+02:00  WARN 15564 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-03-02T00:52:24.342+02:00  INFO 15564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-02T00:52:24.381+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:52:24.383+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:52:24.383+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:52:24.383+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:52:24.393+02:00  INFO 15564 --- [restartedMain] c.e.t.TechTaskAgencyAmazonApplication    : Started TechTaskAgencyAmazonApplication in 17.444 seconds (process running for 22.014)
+2024-03-02T00:52:24.406+02:00  INFO 15564 --- [restartedMain] c.e.t.services.ReportUpdateService       : Deleting all reports from the database...
+2024-03-02T00:52:24.876+02:00  INFO 15564 --- [restartedMain] c.e.t.services.ReportUpdateService       : Reading test_report.json...
+2024-03-02T00:52:24.877+02:00  INFO 15564 --- [restartedMain] c.e.t.services.ReportUpdateService       : Deserializing JSON to Report object...
+2024-03-02T00:52:25.122+02:00  INFO 15564 --- [restartedMain] c.e.t.services.ReportUpdateService       : Saving report to the database...
+2024-03-02T00:52:25.465+02:00  INFO 15564 --- [restartedMain] c.e.t.configurations.DbInitializer       : Database initialization completed.
+2024-03-02T00:53:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:53:24.374+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:53:24.375+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:53:24.375+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:53:43.113+02:00  INFO 15564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-02T00:53:43.122+02:00  INFO 15564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-03-02T00:53:43.273+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:53:43.279+02:00  WARN 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:53:43.296+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:53:43.296+02:00  WARN 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:53:43.475+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.r.RegistrationRestController       : Received registration request for user: nikita
+2024-03-02T00:53:43.481+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.services.UserValidator             : Validating registration data for user: nikita
+2024-03-02T00:53:43.481+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.services.UserValidator             : All validations were successful for the user: nikita
+2024-03-02T00:53:43.483+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.services.UserService               : Registering user: nikita
+2024-03-02T00:53:44.893+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.services.UserService               : User registered successfully: nikita
+2024-03-02T00:53:44.894+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.r.RegistrationRestController       : User registered successfully.
+2024-03-02T00:54:11.466+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:54:11.467+02:00  WARN 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:54:11.468+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:54:11.469+02:00  WARN 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : No token found in request
+2024-03-02T00:54:11.477+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.r.AuthenticationRestController     : Received login request for user: nikita
+2024-03-02T00:54:13.797+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.services.UserService               : Finding user by login: nikita
+2024-03-02T00:54:13.846+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Creating token for user: nikita
+2024-03-02T00:54:13.976+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Token created successfully for user: nikita
+2024-03-02T00:54:13.977+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.r.AuthenticationRestController     : User nikita authenticated successfully
+2024-03-02T00:54:24.370+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:54:24.371+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:54:24.372+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:54:24.372+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:54:52.655+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:54:52.657+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:54:52.658+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:54:52.796+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:54:52.796+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:54:52.803+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:54:52.846+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:54:52.847+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:54:52.847+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:54:52.851+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:54:52.851+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:54:52.855+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:54:52.907+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.restControllers.ReportController   : Fetching reports by date: 2024-02-18
+2024-03-02T00:54:53.165+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.services.ReportService             : Fetching reports by date: 2024-02-18
+2024-03-02T00:55:08.477+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:55:08.478+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:55:08.478+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:55:08.484+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:55:08.485+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:55:08.492+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:55:08.536+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:55:08.537+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:55:08.538+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:55:08.543+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:55:08.543+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:55:08.549+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:55:08.594+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.restControllers.ReportController   : Fetching reports between dates: 2024-02-18 and 2024-02-20
+2024-03-02T00:55:08.637+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.services.ReportService             : Fetching reports between dates: 2024-02-18 and 2024-02-20
+2024-03-02T00:55:24.377+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:55:24.378+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:55:24.378+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:55:24.379+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:55:37.474+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:55:37.475+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:55:37.475+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:55:37.479+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:55:37.479+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:55:37.484+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:55:37.526+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:55:37.526+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:55:37.526+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:55:37.530+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:55:37.530+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:55:37.534+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:55:37.626+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0BTMKDMYJ
+2024-03-02T00:55:37.627+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.services.ReportService             : Fetching reports by ASIN: B0BTMKDMYJ
+2024-03-02T00:56:11.768+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:11.783+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:11.783+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:11.793+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:11.795+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:11.808+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:11.860+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:11.860+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:11.860+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:11.865+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:11.865+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:11.871+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:11.915+02:00 ERROR 15564 --- [http-nio-8080-exec-7] c.e.t.advice.GlobalExceptionAdvice       : Exception occurred: Request method 'POST' is not supported
+2024-03-02T00:56:11.919+02:00  WARN 15564 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-03-02T00:56:24.372+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:56:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:56:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:56:24.374+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:56:28.421+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:28.422+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:28.422+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:28.428+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:28.429+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:28.436+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:28.475+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:28.476+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:28.476+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:28.481+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:28.481+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:28.485+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:28.531+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.restControllers.ReportController   : Fetching reports by multiple ASINs
+2024-03-02T00:56:28.532+02:00  INFO 15564 --- [http-nio-8080-exec-10] c.e.t.services.ReportService             : Fetching reports by multiple ASINs
+2024-03-02T00:56:57.451+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:57.451+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:57.451+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:57.459+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:57.459+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:57.465+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:57.507+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:56:57.507+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:56:57.508+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:56:57.512+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:56:57.512+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:56:57.516+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:56:57.564+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.restControllers.ReportController   : Fetching all reports by sales and traffic by date
+2024-03-02T00:56:57.567+02:00  INFO 15564 --- [http-nio-8080-exec-8] c.e.t.services.ReportService             : Fetching all reports by sales and traffic by date
+2024-03-02T00:57:13.558+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:57:13.559+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:57:13.559+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:57:13.568+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:57:13.568+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:57:13.574+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:57:13.614+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:57:13.614+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:57:13.614+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:57:13.619+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:57:13.620+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:57:13.623+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:57:13.665+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.restControllers.ReportController   : Fetching all reports by sales and traffic by ASIN
+2024-03-02T00:57:13.666+02:00  INFO 15564 --- [http-nio-8080-exec-2] c.e.t.services.ReportService             : Fetching all reports by sales and traffic by ASIN
+2024-03-02T00:57:24.376+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:57:24.378+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:57:24.379+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:57:24.380+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:58:11.728+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:11.729+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:11.729+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:11.737+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:11.737+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:11.742+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:11.787+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:11.787+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:11.787+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:11.790+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:11.791+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:11.795+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:11.845+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:58:11.845+02:00  INFO 15564 --- [http-nio-8080-exec-1] c.e.t.services.ReportService             : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:58:21.979+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:21.980+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:21.980+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:21.993+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:21.993+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:21.997+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:22.038+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:22.038+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:22.039+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:22.043+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:22.043+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:22.046+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:22.088+02:00  INFO 15564 --- [http-nio-8080-exec-3] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:58:24.375+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:58:24.376+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709312732293
+2024-03-02T00:58:24.376+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:58:24.376+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T00:58:33.639+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:33.640+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:33.640+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:33.643+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:33.644+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:33.653+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:33.692+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:33.692+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:33.692+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:33.697+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:33.697+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:33.700+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:33.740+02:00  INFO 15564 --- [http-nio-8080-exec-5] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:58:52.431+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:52.431+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:52.431+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:52.436+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:52.437+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:52.461+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:52.520+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:52.521+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:52.521+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:52.526+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:52.526+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:52.529+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:52.589+02:00  INFO 15564 --- [http-nio-8080-exec-4] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:58:56.056+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:56.057+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:56.057+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:56.061+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:56.061+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:56.064+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:56.105+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:58:56.106+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:58:56.106+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:58:56.111+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:58:56.111+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:58:56.115+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:58:56.155+02:00  INFO 15564 --- [http-nio-8080-exec-6] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:59:24.367+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T00:59:24.367+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T00:59:24.367+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709312732293
+2024-03-02T00:59:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Detected changes in the report file. Updating reports...
+2024-03-02T00:59:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Deleting all reports from the database...
+2024-03-02T00:59:24.410+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Reading test_report.json...
+2024-03-02T00:59:24.410+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Deserializing JSON to Report object...
+2024-03-02T00:59:24.428+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Saving report to the database...
+2024-03-02T00:59:24.650+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : All caches cleared.
+2024-03-02T00:59:24.651+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Reports updated successfully.
+2024-03-02T00:59:33.870+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:59:33.870+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:59:33.871+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:59:33.877+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:59:33.878+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:59:33.884+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:59:33.924+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Resolving token from request
+2024-03-02T00:59:33.925+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Token resolved from request
+2024-03-02T00:59:33.925+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Validating token
+2024-03-02T00:59:33.928+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting authentication for token
+2024-03-02T00:59:33.928+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Getting username from token
+2024-03-02T00:59:33.933+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.security.JwtTokenProvider          : Username retrieved from token: nikita
+2024-03-02T00:59:33.978+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.restControllers.ReportController   : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:59:33.978+02:00  INFO 15564 --- [http-nio-8080-exec-7] c.e.t.services.ReportService             : Fetching reports by ASIN: B0CWF6N6RM
+2024-03-02T00:59:34.021+02:00 ERROR 15564 --- [http-nio-8080-exec-7] c.e.t.advice.GlobalExceptionAdvice       : Exception occurred: There are no records with ASIN B0CWF6N6RM
+2024-03-02T00:59:34.024+02:00  WARN 15564 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.techtaskagencyamazon.exception.ReportException: There are no records with ASIN B0CWF6N6RM]
+2024-03-02T01:00:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T01:00:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T01:00:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709333928719
+2024-03-02T01:00:24.368+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T01:01:24.378+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T01:01:24.379+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T01:01:24.380+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709333928719
+2024-03-02T01:01:24.380+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T01:02:24.372+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T01:02:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T01:02:24.374+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709333928719
+2024-03-02T01:02:24.374+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T01:03:24.372+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T01:03:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T01:03:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709333928719
+2024-03-02T01:03:24.373+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
+2024-03-02T01:04:24.379+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Running scheduled task: updateReports
+2024-03-02T01:04:24.379+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Current modified time: 1709333928719
+2024-03-02T01:04:24.380+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : Last modified time: 1709333928719
+2024-03-02T01:04:24.380+02:00  INFO 15564 --- [scheduling-1] c.e.t.services.ReportUpdateService       : No changes detected in the report file. No update needed.
